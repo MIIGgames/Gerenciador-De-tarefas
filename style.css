@@ -101,7 +101,7 @@
     text-decoration: line-through;
   }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:808px) {
     body {
         margin: auto;
         width: auto;
@@ -119,6 +119,16 @@
       .new-task-button {
         margin-top: 20px;
       }
+
+      .tasks-container {
+        background-color: #fff;
+        padding: 30px 20px;
+        margin-top: 60px;
+        border-radius: 10px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        width: auto;
+      }
+      
       
     .container {
         margin: auto;
