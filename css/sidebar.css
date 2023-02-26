@@ -1,0 +1,117 @@
+div.flex-dashboard {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: fixed;
+}
+
+sidebar {
+    background-color: #fff;
+    display: block;
+    height: 100%;
+    width: 300px;
+}
+
+sidebar .sidebar-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 95px;
+    border: 1px solid rgba(0,0,0,.0625);
+    border-right: 0px;
+}
+
+sidebar .sidebar-title img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+sidebar .sidebar-title h2 {
+    color: #000;
+    font-size: 18px;
+    margin-top: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+div.menu {
+    border-right: 1px solid rgba(0,0,0,.0625);
+}
+
+div.menu ul {
+    list-style-type: none;
+}
+
+div.menu ul li {
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -20px;
+    border-bottom: 1px solid rgba(0,0,0,.0625);
+}
+
+div.menu ul li:hover {
+    background: linear-gradient(135deg, #5e17eba8, #5e17ebb8);
+    transition: .2s;
+    cursor: pointer;
+    width: auto;
+    color: #fff;
+}
+
+div.menu ul li svg {
+    color: #5e17eb;
+    font-size: 25px;
+}
+
+div.menu ul li a {
+    color: #000;
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div.menu ul li a:hover {
+    color: #fff;
+}
+
+.showbar_logaut {
+    display: none;
+}
+
+.hide {
+    left: -300px;
+}
+
+@media  screen and (max-width:768px) {
+    sidebar {
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        transition: .4s;
+    }
+    .showbar_logaut {
+        display: block;
+    }
+}
+
+@media  screen and (max-width:380px) {
+    sidebar {
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        transition: .4s;
+        width: 250px;
+    }
+    .showbar_logaut {
+        display: block;
+    }
+}
