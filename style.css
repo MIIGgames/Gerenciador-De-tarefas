@@ -105,6 +105,7 @@
     body {
         margin: auto;
         width: auto;
+        overflow-x: hidden;
       }
 
       .new-task-container {
