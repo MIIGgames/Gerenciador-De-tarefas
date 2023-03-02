@@ -69,7 +69,7 @@ body {
   }
   
   /* Define layout da página para dispositivos móveis */
-  @media only screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     body {
         max-width: 1200px;
         margin: auto;
